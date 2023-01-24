@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.backgroundColor{
+background-color: white;
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 0, 0;
+}
+.wrapperImg{
+    background-image: url(/asssets/img/Logos/BeeDalyElectric-Logo-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 25vh;
+    padding: 40px;
+
+}
+
+
+.navbar{
+    max-width: 100%;
+    max-height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#CBB26B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.img-info{
+    margin: 0;
+}
+
+.img-info>h3{
+width: 88vw;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #2e3864;
+min-height: 10vh;
+font-family: 'Times New Roman', Times, serif;
+margin: 18px;
+}
+
+.img-info>p{
+align-items: center;
+justify-content: center;
+color:darkgray;
+min-height: 10vh;
+font-family: 'Times New Roman', Times, serif;
+margin: 18px;
+}
+
+.flexBoxWrapper{
+    display: flex;
+    align-items:center ;
+    min-height: 5vh;
+    margin: 0 auto;
+}
+
+.flexBoxWrapper>h5{
+    color: #a09004;
+    margin: 8px;
+    font-size: medium;
+
+}
+
+.lines{
+    width: 20px;
+    height: 2.5px;
+    position: relative;
+    background-color: #ada345;
+    margin-left: 10px;
+}
+
+
+
+.ElectricianImageWrapper{
+    background-image: url(/asssets/img/Electricians/electrician-1.jpg);
+    background-size: 100vw;
+    height: 60vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgb(60, 61, 61); 
+    background-blend-mode: screen;
+    align-items: baseline;
+    padding: 5px;
+    margin: 0px 9px;
+}
+
+
+/* @media only screen and (min-width: 768px) {
+
+    .wrapper{
+        width: 100%;
+            background-image: linear-gradient( toright,  #2e3864, #3e4c87);
+
+    }
+    .wrapperImg{
+        display: block;
+        width: 100vw;
+        height: 45vh;
+    }
+} */
