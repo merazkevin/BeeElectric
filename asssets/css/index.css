@@ -1,20 +1,21 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.backgroundColor{
-background-color: white;
+.backgroundColor {
+    background-color: white;
 }
 
 
-.wrapper{
+.wrapper {
     width: 100%;
     margin: 0, 0;
 }
-.wrapperImg{
-    background-image: url(/asssets/img/Logos/BeeDalyElectric-Logo-2.png);
+
+.wrapperImg {
+    background-image: url(../img/Logos/BeeDalyElectric-Logo-2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -24,7 +25,7 @@ background-color: white;
 }
 
 
-.navbar{
+.navbar {
     max-width: 100%;
     max-height: 100px;
     background-color: white;
@@ -35,52 +36,54 @@ background-color: white;
 
 
 
-a{
+a {
     text-decoration: none;
-    color:#CBB26B;
+    color: #CBB26B;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-.img-info{
+.img-info {
     margin: 0;
 }
 
-.img-info>h3{
-width: 88vw;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #2e3864;
-min-height: 10vh;
-font-family: 'Times New Roman', Times, serif;
-margin: 18px;
-}
-
-.img-info>p{
-align-items: center;
-justify-content: center;
-color:darkgray;
-min-height: 10vh;
-font-family: 'Times New Roman', Times, serif;
-margin: 18px;
-}
-
-.flexBoxWrapper{
+.img-info>h3 {
+    width: 88vw;
     display: flex;
-    align-items:center ;
-    min-height: 5vh;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #2e3864;
+    min-height: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 18px;
+    font-size: x-large;
 }
 
-.flexBoxWrapper>h5{
+.img-info>p {
+    align-items: center;
+    justify-content: center;
+    color: darkgray;
+    min-height: 10vh;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 18px;
+}
+
+.flexBoxWrapper {
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    margin: 0 ;
+}
+
+.flexBoxWrapper>h5 {
     color: #a09004;
     margin: 8px;
-    font-size: medium;
+    font-size: larger;
 
 }
 
-.lines{
+.lines {
     width: 20px;
     height: 2.5px;
     position: relative;
@@ -90,17 +93,53 @@ margin: 18px;
 
 
 
-.ElectricianImageWrapper{
+.ElectricianImageWrapper {
     background-image: url(/asssets/img/Electricians/electrician-1.jpg);
     background-size: 100vw;
     height: 60vh;
     background-position: top;
     background-repeat: no-repeat;
-    background-color: rgb(60, 61, 61); 
+    background-color: rgb(60, 61, 61);
     background-blend-mode: screen;
     align-items: baseline;
     padding: 5px;
     margin: 0px 9px;
+    border-radius: 5px;
+}
+
+.beeHivePic {
+    background-image: url(/asssets/img/bees/beeHive-6.jpg);
+    background-size: 100vw;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgb(116, 116, 116);
+    background-blend-mode: screen;
+    padding: 5px;
+    margin: 0px 9px;
+    border-radius: 5px;
+}
+
+.beeHivePic>h2 {
+    width: 88vw;
+    color: white;
+    min-height: 10vh;
+    font-family: Roboto;
+    margin: 18px;
+    text-shadow: black 2px 2px ;
+}
+.beeHivePic>button{
+    border-radius: 11px;
+    background-color: #ada345;
+    height: 40px;
+    width: 180px;
+    font-size: medium;
+}
+.beeHivePic>button>a{
+    color: white;
+
 }
 
 
