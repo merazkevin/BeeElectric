@@ -93,7 +93,7 @@ a {
 
 
 .ElectricianImageWrapper{
-    background-image: url(/asssets/img/Electricians/electrician-1.jpg);
+    background-image: url('/asssets/img/Electricians/electrician-1.jpg');
     background-size: 100vw;
     height: 60vh;
     background-position: top;
@@ -107,7 +107,7 @@ a {
 }
 
 .beeHivePic {
-    background-image: url(/asssets/img/bees/beeHive-6.jpg);
+    background-image: url('/asssets/img/bees/beeHive-6.jpg');
     background-size: 100vw;
     height: 30vh;
     align-items: center;
