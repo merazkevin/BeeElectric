@@ -13,9 +13,8 @@
     width: 100%;
     margin: 0, 0;
 }
-
-.wrapperImg {
-    background-image: url(../img/Logos/BeeDalyElectric-Logo-2.png);
+.wrapperImg{
+    background-image: url('/asssets/img/Logos/BeeDalyElectric-Logo-2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -93,7 +92,7 @@ a {
 
 
 
-.ElectricianImageWrapper {
+.ElectricianImageWrapper{
     background-image: url(/asssets/img/Electricians/electrician-1.jpg);
     background-size: 100vw;
     height: 60vh;
