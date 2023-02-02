@@ -12,17 +12,21 @@
     }
 
 
-.wrapper {
-    width: 100%;
-    margin: 0, 0;
-}
-.wrapperImg{
-    background-image: url('/asssets/img/Logos/BeeDalyElectric-Logo-2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    height: 25vh;
-    padding: 40px;
+    .wrapper {
+        width: 100%;
+        margin: 0, 0;
+    }
+
+    .wrapperImg {
+        background-image: url("../img/Logos/BeeDalyElectric-Logo-6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: 100vw;
+        min-height: 25vh;
+        background-size: contain;
+        border-radius: 15px;
+        margin: 7px;
 
     }
 
@@ -95,34 +99,61 @@
 
 
 
-.ElectricianImageWrapper{
-    background-image: url(/asssets/img/Electricians/electrician-1.jpg);
-    background-size: 100vw;
-    height: 60vh;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: rgb(60, 61, 61);
-    background-blend-mode: screen;
-    align-items: baseline;
-    padding: 5px;
-    margin: 0px 9px;
-    border-radius: 5px;
-}
+    .ElectricianImageWrapper {
+        background-image: url("../img/Electricians/electrician-6.jpg");
+        background-size: 100vw;
+        height: 57vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #07122C;
+        background-blend-mode: screen;
+        align-items: baseline;
+        border-radius: 5px;
+        border-top: #F6BD46 solid 10px;
+        border-bottom: #F6BD46 solid 8px;
+    }
 
-.beeHivePic {
-    background-image: url(/asssets/img/bees/beeHive-6.jpg);
-    background-size: 100vw;
-    height: 30vh;
-    align-items: center;
-    justify-content: center;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: rgb(116, 116, 116);
-    background-blend-mode: screen;
-    padding: 5px;
-    margin: 0px 9px;
-    border-radius: 5px;
-}
+    .ElectricianImageWrapper>h1 {
+        color: white;
+        text-shadow: #808080 2px 2px 2px;
+        width: 100vw;
+        font-size: 5.5vh;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .ElectricianImageWrapper>button {
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 6vh;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        font-size: large;
+        border-radius: 5px;
+        background-color: #F6BD46;
+    }
+
+    .ElectricianImageWrapper>button>a {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .beeHivePic {
+        background-image: url("../img/bees/beeHive-7.jpg");
+        background-size: 100vw;
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-color: rgb(116, 116, 116);
+        background-blend-mode: screen;
+        padding: 5px;
+        margin: 0px 9px;
+        border-radius: 5px;
+    }
 
     .beeHivePic>h2 {
         text-align: center;
