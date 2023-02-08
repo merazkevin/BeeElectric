@@ -4,7 +4,8 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 320px),
+(min-height:812px) {
 
 
     .backgroundColor {
@@ -13,7 +14,7 @@
 
 
     .wrapper {
-        width: 100%;
+        width: 20rem;
         margin: 0, 0;
     }
 
@@ -22,102 +23,127 @@
         background-position: center;
         background-repeat: no-repeat;
         object-fit: contain;
-        width: 100vw;
-        min-height: 25vh;
+        width: 20rem;
+        height: 12.6875rem;
         background-size: contain;
-        border-radius: 15px;
-        margin: 7px;
-
+        border-radius: 0.938rem;
+        margin: 0.438rem;
     }
 
 
     .navbar {
-        max-width: 100%;
-        max-height: 100px;
+        max-width: 20rem;
+        max-height: 6.25rem;
         display: flex;
         align-items: baseline;
         justify-content: space-evenly;
-        padding: 5px;
+        padding: 0.313rem;
     }
 
 
 
-    a {
+    .navbar>div>a {
         text-decoration: none;
         color: #F6BD46;
         font-family: Georgia, 'Times New Roman', Times, serif;
-
     }
+
+    .navbar>div>a:hover {
+        background-image: linear-gradient(to right,
+                #54b3d6,
+                #54b3d6 50%,
+                lightgray 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: #808080;
+        margin-bottom: .5rem;
+        font-size: large;
+    }
+
 
     .img-info {
         margin: 0;
     }
 
     .img-info>h3 {
-        width: 88vw;
-        display: flex;
+        width: 17.6rem;
         text-align: center;
         color: rgb(48, 48, 48);
-        min-height: 10vh;
+        height: 5.075rem;
         font-family: 'Times New Roman', Times, serif;
-        margin: 18px;
+        margin-left: 1.125rem;
+        margin-right: 1.125rem;
         font-size: x-large;
     }
 
     .img-info>p {
-        align-items: center;
-        justify-content: center;
         color: #808080;
-        min-height: 10vh;
-        font-size: larger;
+        font-size: large;
         font-family: 'Times New Roman', Times, serif;
-        margin: 18px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
     }
 
     .flexBoxWrapper {
         display: flex;
+        width: 20rem;
         align-items: center;
-        min-height: 5vh;
-        margin: 0;
     }
 
     .flexBoxWrapper>h5 {
         color: #F6BD46;
-        margin: 8px;
+        margin: .5rem;
         font-size: larger;
         font-family: Roboto;
 
     }
 
     .lines {
-        width: 20px;
-        height: 2.5px;
+        width: 1.25rem;
+        height: 0.156rem;
         position: relative;
         background-color: #F6BD46;
-        margin-left: 10px;
+        margin-left: 0.625rem;
+    }
+
+    .lines-2 {
+        margin: 2rem;
+        width: 4rem;
+        height: 0.438rem;
+        position: relative;
+        background-color: #F6BD46;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        border: white solid 0.063rem;
+        text-shadow: #808080;
     }
 
 
 
     .ElectricianImageWrapper {
         background-image: url("../img/Electricians/electrician-6.jpg");
-        background-size: 100vw;
-        height: 57vh;
+        background-size: 20rem;
+        height: 28.9275rem;
         background-position: top;
         background-repeat: no-repeat;
         background-color: #07122C;
         background-blend-mode: screen;
         align-items: baseline;
-        border-radius: 5px;
-        border-top: #F6BD46 solid 10px;
-        border-bottom: #F6BD46 solid 8px;
+        border-radius: 0.313rem;
+        border-top: #F6BD46 solid 0.625rem;
+        border-bottom: #F6BD46 solid .5 rem;
     }
 
     .ElectricianImageWrapper>h1 {
+        margin-top: 1rem;
         color: white;
-        text-shadow: #808080 2px 2px 2px;
-        width: 100vw;
-        font-size: 5.5vh;
+        text-shadow: #808080 0.125rem 0.125rem 0.125rem;
+        width: 20rem;
+        font-size: 2.79125rem;
         font-family: Roboto;
         text-align: center;
     }
@@ -125,13 +151,14 @@
     .ElectricianImageWrapper>button {
         align-items: center;
         justify-content: center;
-        width: 40vw;
-        height: 6vh;
-        margin-left: 30vw;
-        margin-right: 30vw;
+        width: 8rem;
+        height: 3.04rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
         font-size: large;
-        border-radius: 5px;
+        border-radius: 0.313rem;
         background-color: #F6BD46;
+        border: none;
     }
 
     .ElectricianImageWrapper>button>a {
@@ -142,35 +169,46 @@
 
     .beeHivePic {
         background-image: url("../img/bees/beeHive-7.jpg");
-        background-size: 100vw;
-        height: 30vh;
+        background-size: 20rem;
+        width: 20rem;
+        height: 20.30rem;
         align-items: center;
         justify-content: center;
+        object-fit: scale-down;
         background-position: right top;
         background-repeat: no-repeat;
         background-color: rgb(116, 116, 116);
         background-blend-mode: screen;
-        padding: 5px;
-        margin: 0px 9px;
-        border-radius: 5px;
+        padding: 0.313rem;
+        margin: 2rem .25rem;
+        border-radius: 0.313rem;
     }
 
     .beeHivePic>h2 {
         text-align: center;
-        width: 88vw;
+        width: 17.6rem;
+        height: 5.075rem;
         color: #808080;
-        min-height: 10vh;
         font-family: Roboto;
-        margin: 18px;
-        text-shadow: black;
+        margin: 4.500rem 1.125rem;
+        text-shadow: #000000 .063rem .063rem .063rem;
+        padding: 0.125rem;
     }
 
     .beeHivePic>button {
-        border-radius: 11px;
+        border-radius: 0.688rem;
+        ;
         background-color: #F6BD46;
-        height: 40px;
-        width: 180px;
+        height: 2.5rem;
+        width: 8rem;
         font-size: medium;
+        margin-right: 5.5rem;
+        margin-left: 5.5rem;
+        border: none;
+    }
+
+    .beeHivePic>button:hover {
+        font-size: larger;
     }
 
     .beeHivePic>button>a {
@@ -178,96 +216,91 @@
 
     }
 
-    .AboutChristopher>p{
-        color: #808080;
-        font-size: larger;
-        margin-left: 5vw;
-        margin-right: 5vw;
+    .beeHivePic>button>a:hover {
+        color: aquamarine;
     }
 
-    .ChristopherPicture{
+    .AboutChristopher>p {
+        color: #808080;
+        font-size: larger;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .ChristopherPicture {
         background-image: url("../img/Electricians/electrician-1.jpg");
-        background-size: 100vw;
-        width: 40vw;
-        height: 20vh;
+        background-size: 20rem;
+        width: 8rem;
+        height: 10.15rem;
         background-position: right top;
         background-repeat: no-repeat;
-        padding: 5px;
-        margin-left: 30vw;
-        margin-right: 30vw;
-        border-radius: 5px;
+        padding: 0.313rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        border-radius: 0.313rem;
         background-color: rgb(116, 116, 116);
         background-blend-mode: screen;
 
     }
 
-    .Electrician-image-about {
-        background-image: url("../img/Electricians/electrician-7.jpg");
-        width: 100vw;
-        height: 30vh;
-        background-size: 100vw;
-        height: 30vh;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #07122C;
-        background-blend-mode: screen;
-        padding: 5px;
-        margin: 0px 9px;
-        border-radius: 5px;
-    }
+
 
     .chooseFrom>h2 {
         text-align: center;
         align-items: center;
         justify-content: center;
-        max-width: 95vw;
+        max-width: 19rem;
         color: #07122C;
-        font-size: 2.9vh;
+        font-size: 1.47175rem;
         font-family: 'Times New Roman', Times, serif;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2.5375rem;
+        margin-bottom: 2.5375rem;
+    }
+
+    .electrical {
+        margin: 1rem;
     }
 
     .electrical-img {
         background-image: url("../img/Electricians/electrician-3.jpg");
-        background-size: 100vw;
-        width: 60vw;
-        height: 20vh;
+        background-size: 20rem;
+        width: 12rem;
+        height: 9rem;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #07122C;
         background-blend-mode: screen;
         align-items: baseline;
         justify-content: center;
-        border-radius: 5px;
-        margin-top: 20px;
-        margin-left: 20vw;
-        margin-right: 20vw;
+        border-radius: 0.313rem;
+        margin-top: 1.25rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
     }
 
     .electrical>h3 {
         color: #07122C;
-text-align: center;
+        text-align: center;
     }
 
     .electrical>p {
         text-align: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
         color: #808080;
     }
 
     .electrical>button {
         background-color: #F6BD46;
-        margin-left: 40vw;
-        margin-right: 40vw;
-        width: 20vw;
-        height: 3vh;
-        border-radius: 5px;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        width: 4rem;
+        height: 1.5225rem;
+        border-radius: 0.313rem;
+        border: none;
     }
 
     .electrical>button>a {
@@ -276,38 +309,39 @@ text-align: center;
 
     .EvCharging-img {
         background-image: url("../img/tesla_evChargers/EV-charger-smallWhiteCar.jpg");
-        background-size: 100vw;
-        width: 60vw;
-        height: 20vh;
+        background-size: 20rem;
+        width: 12rem;
+        height: 10.15rem;
         background-position: center;
         background-repeat: no-repeat;
         align-items: baseline;
         justify-content: center;
-        border-radius: 5px;
-        margin-top: 20px;
-        margin-left: 20vw;
-        margin-right: 20vw;
+        border-radius: 0.313rem;
+        margin-top: 1.25;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .EvCharging>h3 {
         color: #07122C;
-text-align: center;
+        text-align: center;
     }
 
     .EvCharging>p {
         color: #808080;
         text-align: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .EvCharging>button {
         background-color: #F6BD46;
-        margin-left: 40vw;
-        margin-right: 40vw;
-        width: 20vw;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        width: 4rem;
         height: 3vh;
         border-radius: 5px;
+        border: none;
     }
 
     .EvCharging>button>a {
@@ -317,93 +351,135 @@ text-align: center;
 
     .footer {
         text-align: center;
-        padding: 5px;
-        margin-top: 15vh;
-        width: 100vw;
-        height: 20vh;
-        border-top: #aaaaaa solid 10px;        background-color: #F6BD46;
-        border-radius: 8px;
+        padding: 1rem;
+        margin-top: .25rem;
+        border-top: #aaaaaa solid .75rem;
+        background-color: #F6BD46;
+        border-radius: 0.5rem;
     }
 
     .footer>p {
+        text-align: center;
+        color: white;
+        font-size: .761rem;
+    }
+
+    .socialMedia-icons {
         display: flex;
+        width: 4rem;
+        margin: 1rem 7rem;
+        border-radius: .313rem;
         justify-content: space-evenly;
-        color: white;
-        font-size: 1.5vh;
     }
 
-    .socialMedia-icons{
-        border: white solid 1px;
-        width: 20vw;
-        margin-left: 40vw;
-        margin-right: 40vw;
-        border-radius: 5px;
-    }
-    
-    .uil-facebook-f{
+    .uil-facebook {
+        margin: .313rem;
         color: white;
-        font-size: 2vh;
+        font-size: 1.5225rem;
     }
-    
-    .uil-instagram{
+
+    .uil-facebook:hover {
+        font-size: 2rem;
+    }
+
+    .uil-instagram {
+        margin: .313rem;
         color: white;
-        font-size: 2vh;
+        font-size: 1.5225rem;
     }
-    .uil-linkedin-alt{
+
+    .uil-instagram:hover {
+        font-size: 2rem;
+    }
+
+    .uil-linkedin-alt {
+        margin: .313rem;
         color: white;
-        font-size: 2vh;
+        font-size: 1.5225rem;
     }
+
+    .uil-linkedin-alt:hover {
+        font-size: 2rem;
+    }
+
+    .uil-estate,
+    .uil-building {
+        padding: 2rem;
+        width: 16rem;
+        height: 25.375rem;
+        font-size: 4rem;
+        color: #F6BD46;
+    }
+
+    .uil-estate:hover,
+    .uil-building:hover {
+        font-size: 5rem;
+        background-image: linear-gradient(to right,
+                #54b3d6,
+                #54b3d6 50%,
+                lightgray 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: .5rem;
+    }
+
+    .icon-wrapper {
+        border: #F6BD46 solid .063rem;
+        border-radius: 0.313rem;
+        margin: 0.938rem;
+        padding: 5rem;
+    }
+
+    .icon-wrapper:hover {
+        border: #54b3d6 solid 1px;
+    }
+
+    .icon-wrapper>h3 {
+        margin-left: 1.51rem;
+        margin-right: 1rem;
+        color: #808080;
+    }
+
+    .residential-detail {
+        width: 20rem;
+        background-color: #F8F9FA;
+        margin: .25rem;
+    }
+
+    .residential-detail>h1 {
+        color: #07122C;
+        text-align: center;
+        margin-bottom: .25rem;
+    }
+
+    .residential-detail>p {
+        color: #808080;
+        font-size: larger;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .residential-detail>i, .residential-detail>i:hover {
+        font-size: 10rem;
+        color: #808080;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+.all-icons-wrapper{
+    display: flex;
 }
 
-/* <============== Ipad =============> */
-@media only screen and (min-width: 800px) {
-    .wrapperImg {
-        width: 780px;
-        max-width: 100vw;
-        justify-content: center;
-
-    }
-
-    .navbar {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        max-width: 100vw;
-    }
-
-    .navbar>div>a {
-        justify-content: space-between;
-        font-size: x-large;
-    }
-
-    .ElectricianImageWrapper {
-        max-width: 100vw;
-    }
-
-    .ElectricianImageWrapper>h1 {
-        font-size: 8vh;
-        width: 90vw;
-        max-width: 100vw;
-        height: 7.5vh;
-        text-align: center;
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-
-    .ElectricianImageWrapper>button{
-        margin-left: 30vw;
-        margin-right:30vw ;
-    }
-    .chooseFrom>h2{
-        font-size: 5vh;
-        text-align: center;
-    }
-
-    .electrical-img{
-        height: 30vh;
-        width: 60vw;
-        /* max-width: 60vw; */
-        object-fit: cover;
-        
-    }
-
+.all-icons-wrapper>*{
+    flex: 1 1 100%;
 }
+}
+
+/* <============== Screen---> 640px  =============> */
+@media only screen and (min-width: 640px) {}
+
+/* <======= Screen 750px ======> */
+@media only screen and (min-width: 750px) {}
